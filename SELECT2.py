@@ -1,6 +1,6 @@
 import sqlalchemy
 
-engine = sqlalchemy.create_engine('postgresql://user1:1111@localhost/user1')
+engine = sqlalchemy.create_engine('postgresql://***:***@localhost/***')
 connection = engine.connect()
 selections = connection.execute("""
 SELECT genre_id, COUNT(singer_id) from ИсполнительЖанр
